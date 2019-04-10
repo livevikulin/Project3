@@ -1,0 +1,109 @@
+.developments 
+    margin-top: -107px
+    height: 559px
+    background: url('../img/developments/dev-bg.jpg')
+    background-position: center bottom
+    overflow: hidden
+
+@keyframes move 
+  from 
+    transform: translate(182px, 0)
+  to 
+    transform: translate(-3000px, 150px)
+  
+.dev
+    &-block
+        position: relative
+        &_title 
+            text-align: center
+            color: #626161
+            font-family: 'IntroRegularAlt'
+            font-size: 34px
+            font-weight: 400
+            line-height: 45px
+            margin-bottom: 21px
+            margin-top: 142px
+        &_skier
+            content: ''
+            position: absolute
+            right: -350px
+            bottom: 60px
+            width: 182px
+            height: 130px
+            background: url('../img/developments/skier-1.png') 0 0 no-repeat
+            animation-name: move
+            animation-duration: 5s
+            animation-iteration-count: infinite
+            animation-timing-function: linear
+            z-index: 10
+.dev
+    &-checkpoints 
+        display: flex
+        align-items: flex-end
+        height: 331px
+        margin-left: -5px
+        &_box 
+            position: relative
+            width: 245px
+            height: 289px
+            background: url('../img/developments/checkpoint.png') 0 0 no-repeat
+            &:nth-child(1)
+                margin-right: 135px
+            &:nth-child(2)
+                margin-bottom: 23px
+                margin-right: 123px
+            &:nth-child(3)
+                margin-bottom: 46px
+            &:after 
+                content: ''
+                position: absolute
+                bottom: 0
+                right: 7px
+                width: 4px
+                height: 180px
+                background: #d0d0d0
+                z-index: 20
+            
+    &-box
+        &_number
+            content: ''
+            position: absolute
+            top: 9px
+            left: 9px
+            color: #ffffff
+            font-family: 'IntroBoldAlt'
+            font-size: 30px
+            font-weight: 400
+            line-height: 45px
+            transform: skewY(-10deg)
+        &_link
+            color: #ffffff
+            text-align: center
+            font-family: 'IntroRegular'
+            font-size: 18px
+            font-weight: 300
+            text-decoration: none
+            transform: skewY(-10deg)
+            &:hover 
+                text-decoration: underline
+
+    &-boxp 
+        content: ''
+        position: absolute
+        top: 57px
+        left: 28px
+        width: 205px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        &_second
+            top: 55px
+            left: 23px
+
+
+
+        
+            
+
+

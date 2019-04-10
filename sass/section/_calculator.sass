@@ -1,0 +1,152 @@
+.calculator 
+    &-block 
+        padding: 15px 11px 11px 11px
+        &_title 
+            text-align: center
+            color: #626161
+            font-family: "IntroRegularAlt"
+            font-size: 34px
+            font-weight: 400
+            line-height: 45px
+        &_subtitle 
+            display: block
+            text-align: center
+            color: #626161
+            font-family: "IntroLight"
+            font-size: 22px
+            font-weight: 300
+            line-height: 35px
+            margin-bottom: 35px
+    &-form 
+        display: flex
+        flex-direction: column
+        width: 978px
+        height: 396px
+        border-radius: 3px
+        background-color: #17add2
+        background-image: url('../img/calculator/calculator-bg.png')
+        &_info 
+            margin-bottom: 38px
+            margin-left: 226px
+            margin-top: 47px
+        &_you 
+            margin-left: 195px
+            margin-bottom: 37px
+        &_body 
+            margin-left: 132px
+            margin-bottom: 35px
+    &-info 
+        &_data 
+            color: #ffffff
+            font-family: 'IntroRegular'
+            font-size: 18px
+            font-weight: 400
+            line-height: 45px
+            margin-right: 10px
+            &:nth-child(3)
+                margin-right: 8px
+        &_input 
+            width: 80px
+            height: 42px
+            border-radius: 3px
+            background-color: #12a9c4
+            border: none
+            text-align: center
+            color: #ffffff
+            font-family: 'IntroLight'
+            font-size: 16px
+            font-weight: 400
+            line-height: 45px
+            margin-right: 27px
+            outline: none
+            &::-webkit-input-placeholder 
+                color: #ffffff
+                font-family: 'IntroLight'
+                font-size: 16px
+                font-weight: 400
+                line-height: 45px
+            &:focus::-webkit-input-placeholder
+                color: transparent
+            &:nth-child(4)
+                margin-right: 58px
+            &:nth-child(6)
+                margin-right: 0
+    &-you 
+        &_buttons 
+            display: inline-block
+        &_text 
+            display: inline-block
+            color: #ffffff
+            font-family: 'IntroRegular'
+            font-size: 18px
+            font-weight: 400
+            margin-right: 8px
+        &_button    
+            width: 182px
+            height: 42px
+            border-radius: 20px
+            border: 2px solid #41edff
+            background: rgba(0, 0, 0, 0)
+            color: #ffffff
+            font-family: 'OpenSans'
+            font-size: 13px
+            font-weight: 700
+            letter-spacing: 1.5px
+            margin-right: 14px
+            outline: none
+            &:hover 
+                background: #41edff
+                cursor: pointer
+            &:last-child 
+                margin-right: 0
+    &-body 
+        &_buttons 
+            display: inline-block
+        &_text 
+            color: #ffffff
+            font-family: 'IntroRegular'
+            font-size: 18px
+            font-weight: 400
+            line-height: 45px
+            margin-right: 8px
+        &_button    
+            width: 182px
+            height: 42px
+            border-radius: 20px
+            border: 2px solid #41edff
+            background: rgba(0, 0, 0, 0)  
+            color: #ffffff
+            font-family: 'OpenSans'
+            font-size: 13px
+            font-weight: 700 
+            letter-spacing: 1.5px
+            margin-right: 14px
+            outline: none
+            &:hover 
+                background: #41edff
+                cursor: pointer
+            &:last-child 
+                margin-right: 0
+    &-button 
+        width: 251px
+        height: 55px
+        margin: 0 auto
+        border-radius: 3px
+        border: 2px solid #ffffff
+        background: rgba(0, 0, 0, 0)
+        color: #ffffff
+        font-family: 'IntroRegularAlt'
+        font-size: 22px
+        font-weight: 400
+        outline: none
+        &:hover 
+            background: #41edff
+            cursor: pointer
+
+.active 
+    background: #ffffff
+    border-color: #ffffff
+    color: #21d0e2
+    &:hover 
+        color: #000000
+        background: #ffffff

@@ -1,0 +1,95 @@
+@keyframes walk 
+    0%
+        left: 0
+    49%
+        left: 85%
+        transform: scaleX(1)
+    50% 
+        left: 85%
+        transform: scaleX(-1)
+    99% 
+        left: 0
+        transform: scaleX(-1)
+    100% 
+        left: 0
+        transform: scale(1)
+        
+.walking 
+    padding-top: 35px
+    height: 258px
+    background: url('../img/walking/walking-bg.jpg') no-repeat
+    background-position: center bottom
+    position: relative
+    overflow: hidden
+    &-man 
+        position: absolute
+        left: 0
+        bottom: -50px
+        z-index: 100
+        animation-name: walk
+        animation-iteration-count: infinite
+        animation-duration: 10s
+        animation-timing-function: linear
+    &-block 
+        &_box 
+            width: 372px
+            height: 145px
+            margin: 0 auto
+            display: flex
+            justify-content: center
+            align-items: center
+            box-shadow: 0 26px 59px rgba(235, 246, 246, 0.75)
+            border-radius: 3px
+            background-color: #ffffff
+            position: relative
+            &:before 
+                content: ''
+                position: absolute
+                width: 10px
+                height: 78px
+                top: 100%
+                left: 13%
+                background-color: #e33861
+                background-image: linear-gradient(to right, #abbbbd 0%, #c4d4d6 99%, #c4d4d6 100%)
+            &:after 
+                content: ''
+                position: absolute
+                width: 10px
+                height: 78px
+                top: 100%
+                right: 13%
+                background-color: #e33861
+                background-image: linear-gradient(to right, #abbbbd 0%, #c4d4d6 99%, #c4d4d6 100%)  
+    &-box 
+        width: 360px
+        height: 133px
+        border-radius: 3px
+        border: 5px solid #d3eff2
+        background-color: #ffffff
+        padding-top: 15px
+        padding-left: 35px
+        &_title 
+            display: block
+            color: #626161
+            font-family: 'IntroRegular'
+            font-size: 20px
+            font-weight: 400
+            line-height: 45px
+        &_description 
+            display: block
+            color: #626161
+            font-family: 'OpenSans'
+            font-size: 14px
+            font-weight: 400
+            line-height: 25px
+            margin-top: -10px
+            &:nth-child(3)
+                margin-top: -5px
+        &_strong 
+            color: #1bbbd9
+            font-family: 'IntroBoldAlt'
+            font-size: 20px
+            font-weight: 700
+            line-height: 25px
+
+

@@ -1,0 +1,87 @@
+.header 
+    height: 50px
+    background-color: #00a0e3
+    background-image: linear-gradient(to right, #e23760 0%, #f85980 100%)
+    &-block 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 12px
+        &_schedule 
+            width: 230px
+            height: 50px
+            background-color: rgba(189, 48, 82, 0.6)
+            display: flex
+            justify-content: center
+            align-items: center
+        &_number a 
+            color: #ffa3b9
+            font-family: 'IntroRegular'
+            font-size: 14px
+            text-decoration: none
+            margin-right: 60px
+            outline: none
+            &:last-child 
+                margin-right: 0
+        &_number span 
+            color: #f3f9fa
+            font-family: 'IntroBold'
+            font-size: 20px
+            font-weight: 700
+            line-height: 20px
+        &_call 
+            width: 229px
+            height: 50px
+            background-color: rgba(189, 48, 82, 0.6)
+            display: flex
+            justify-content: center
+            align-items: center
+    &-call
+        &_phone 
+            width: 30px
+            height: 30px
+            border: 2px solid #ff5e85
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 15px
+        &_text 
+            color: #ffffff
+            font-family: 'IntroRegular'
+            font-size: 12px
+            font-weight: 400
+            line-height: 20px
+            text-transform: uppercase
+            letter-spacing: 0.36px
+            text-decoration: none
+            outline: none
+
+.header-block_call:hover 
+    cursor: pointer
+
+.header-block_call:hover .header-call_text 
+    text-decoration: underline
+
+.header-block_schedule:hover 
+    cursor: pointer
+
+.header-block_schedule:hover .header-schedule_text 
+    text-decoration: underline
+
+.header
+    &-schedule
+        &_calendar 
+            margin-right: 15px
+        &_text 
+            color: #ffffff
+            font-family: 'IntroRegular'
+            font-size: 12px
+            font-weight: 400
+            line-height: 20px
+            text-transform: uppercase
+            letter-spacing: 0.36px
+            text-decoration: none
+            outline: none
+
+
